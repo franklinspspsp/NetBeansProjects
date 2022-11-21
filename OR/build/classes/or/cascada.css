@@ -1,0 +1,56 @@
+#pane
+{
+    -fx-background-image: url("anime-girl-writing.gif");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 900 506;
+    -fx-background-position: center;
+    -fx-background-size: cover;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+#nro1, #nro2
+{
+    -fx-text-fill: red;
+    -fx-font-family: "Castellar";
+    -fx-text-veight:hold;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,4,0,0.7),5,0.0,0,1);
+}
+
+#Bsuma, #Bresta, #Bmult, #Bdiv
+{
+    -fx-padding: 5 22 5 22;   
+    -fx-border-color: #e2e2e2;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: #1d1d1d;
+    -fx-font-size: 11pt;
+    -fx-text-fill: #d8d8d8;
+    -fx-background-insets: 0 0 0 0, 0, 1, 2;
+}
+
+#Bsuma, #Bresta, #Bmult, #Bdiv:hover {
+    -fx-background-color: #3a3a3a;
+}
+
+
+#Lrpta
+{
+    -fx-text-fill: red;
+    -fx-font-family: "Algerian";
+    -fx-text-veight:hold;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.7),5,0.0,0,1);
+}
+
+#Bclose
+{
+    -fx-TextField: white;
+    -fx-font-family: "Goudy Stout";
+    -fx-text-veight:hold;
+    -fx-background-color: linear-gradient(#E12EE1, #F3392D);
+    -fx-effect: dropshadow(three-pass-box, rgba(59, 9, 0, 0.6), 5, 0.8, 2, 1);
+}
+
+#Bclose:hover
+{
+    -fx-background-color: linear-gradient(#E12EE1, #EEE70F);
+}
