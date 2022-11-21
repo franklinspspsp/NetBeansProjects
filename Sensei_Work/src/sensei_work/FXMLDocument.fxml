@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="218.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sensei_work.FXMLDocumentController">
+   <children>
+      <GridPane layoutX="-1.0" prefHeight="218.0" prefWidth="350.0" style="-fx-background-image: url('https://www.freepik.es/foto-gratis/papel-pintado-pared-hormigon-pintado-textura-concepto-coloreado_3001819.htm#page=1&amp;query=fondo%20azul&amp;position=0');">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="81.39996337890625" minWidth="10.0" prefWidth="35.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.8" minWidth="10.0" prefWidth="143.8" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="65.20001220703125" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="122.199951171875" minWidth="10.0" prefWidth="104.80000000000001" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.5999755859375" minWidth="0.0" prefWidth="0.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="90.5999755859375" minWidth="10.0" prefWidth="90.5999755859375" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="72.80000000000001" minHeight="10.0" prefHeight="72.80000000000001" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="31.600012207031256" minHeight="0.0" prefHeight="0.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField mouseTransparent="true" text="username" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </TextField>
+            <Label prefHeight="18.0" prefWidth="79.0" text="Username" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </Label>
+            <Label prefHeight="18.0" prefWidth="79.0" text="Password" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </Label>
+            <TextField mouseTransparent="true" text="*******" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </TextField>
+            <CheckBox mnemonicParsing="false" prefHeight="26.0" prefWidth="123.0" text="Remember Me" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </CheckBox>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" prefHeight="37.0" prefWidth="74.0" text="Login" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </Button>
+            <Button contentDisplay="CENTER" mnemonicParsing="true" prefHeight="37.0" prefWidth="74.0" text="Register" textAlignment="CENTER" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Book Antiqua" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
