@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pruebanro3.FXMLDocumentController">
+    <children>
+      <TabPane layoutY="32.0" prefHeight="620.0" prefWidth="1113.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Autor">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtNombreA" layoutX="144.0" layoutY="41.0" />
+                        <TextField fx:id="txtApellidoA" layoutX="144.0" layoutY="101.0" />
+                        <TextField fx:id="txtPais" layoutX="144.0" layoutY="159.0" />
+                        <TextField fx:id="txtEstudio" layoutX="502.0" layoutY="101.0" />
+                        <TextField fx:id="txtCiudad" layoutX="502.0" layoutY="41.0" />
+                        <Label layoutX="41.0" layoutY="44.0" text="Nombre: " />
+                        <Label layoutX="41.0" layoutY="104.0" text="Apellido: " />
+                        <Label layoutX="41.0" layoutY="162.0" text="Pais: " />
+                        <Label layoutX="401.0" layoutY="44.0" text="Ciudad:" />
+                        <Label layoutX="401.0" layoutY="104.0" text="Estudio: " />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Libro">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtNroPaginas" layoutX="445.0" layoutY="91.0" />
+                        <TextField fx:id="txtImprenta" layoutX="128.0" layoutY="137.0" />
+                        <TextField fx:id="txtNombreL" layoutX="128.0" layoutY="48.0" />
+                        <TextField fx:id="txtCapitulos" layoutX="445.0" layoutY="48.0" />
+                        <TextField fx:id="txtIdAutor" layoutX="128.0" layoutY="91.0" />
+                        <Label layoutX="368.0" layoutY="52.0" text="Capitulos: " />
+                        <Label layoutX="337.0" layoutY="95.0" text="Nro de Paginas: " />
+                        <Label layoutX="50.0" layoutY="141.0" text="Imprenta: " />
+                        <Label layoutX="60.0" layoutY="95.0" text="IdAutor: " />
+                        <Label layoutX="57.0" layoutY="52.0" text="Nombre:" />
+                        <TextField fx:id="txtGenero" layoutX="445.0" layoutY="137.0" />
+                        <Label layoutX="374.0" layoutY="141.0" text="Genero:" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Usuario">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtNombreU" layoutX="144.0" layoutY="39.0" />
+                        <Label layoutX="58.0" layoutY="43.0" prefHeight="12.0" prefWidth="50.0" text="Nombre: " />
+                        <TextField fx:id="txtTelefono" layoutX="408.0" layoutY="74.0" />
+                        <Label layoutX="322.0" layoutY="78.0" prefHeight="17.0" prefWidth="56.0" text="Telefono: " />
+                        <TextField fx:id="txtDni" layoutX="408.0" layoutY="41.0" />
+                        <Label layoutX="345.0" layoutY="45.0" prefHeight="17.0" prefWidth="28.0" text="DNI:" />
+                        <TextField fx:id="txtSexo" layoutX="144.0" layoutY="110.0" />
+                        <Label layoutX="75.0" layoutY="114.0" prefHeight="17.0" prefWidth="33.0" text="Sexo:" />
+                        <TextField fx:id="txtApellidoU" layoutX="144.0" layoutY="74.0" />
+                        <Label layoutX="58.0" layoutY="78.0" prefHeight="12.0" prefWidth="50.0" text="Apellido: " />
+                        <TextField fx:id="txtEmail" layoutX="408.0" layoutY="110.0" />
+                        <Label layoutX="341.0" layoutY="114.0" prefHeight="17.0" prefWidth="35.0" text="Email:" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Venta">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="IdVenta" layoutX="379.0" layoutY="77.0" />
+                        <Label layoutX="302.0" layoutY="81.0" prefHeight="12.0" prefWidth="50.0" text="IdVenta: " />
+                        <TextField fx:id="txtDniV" layoutX="123.0" layoutY="68.0" />
+                        <Label layoutX="71.0" layoutY="72.0" prefHeight="17.0" prefWidth="24.0" text="Dni:" />
+                        <TextField fx:id="txtIdLibroV" layoutX="123.0" layoutY="104.0" />
+                        <Label layoutX="51.0" layoutY="108.0" prefHeight="17.0" prefWidth="41.0" text="IdLibro:" />
+                        <TextField fx:id="txtIdAutorV" layoutX="123.0" layoutY="32.0" />
+                        <Label layoutX="48.0" layoutY="36.0" prefHeight="17.0" prefWidth="46.0" text="IdAutor:" />
+                        <Label layoutX="557.0" layoutY="36.0" prefHeight="12.0" prefWidth="50.0" text="IdVenta: " />
+                        <Label layoutX="582.0" layoutY="73.0" prefHeight="17.0" prefWidth="24.0" text="Dni:" />
+                        <Label layoutX="562.0" layoutY="109.0" prefHeight="17.0" prefWidth="41.0" text="IdLibro:" />
+                        <Label layoutX="813.0" layoutY="36.0" prefHeight="17.0" prefWidth="46.0" text="IdAutor:" />
+                        <ComboBox fx:id="cbIdVenta" layoutX="616.0" layoutY="31.0" prefHeight="25.0" prefWidth="78.0" />
+                        <ComboBox fx:id="cbDni" layoutX="616.0" layoutY="69.0" prefHeight="25.0" prefWidth="78.0" />
+                        <ComboBox fx:id="cbIdLibro" layoutX="616.0" layoutY="105.0" prefHeight="25.0" prefWidth="78.0" />
+                        <ComboBox fx:id="cbIdAutor" layoutX="873.0" layoutY="32.0" prefHeight="25.0" prefWidth="78.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Libreria">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="47.0" layoutY="47.0" prefHeight="494.0" prefWidth="1022.0">
+                          <columns>
+                            <TableColumn fx:id="Cnombre" prefWidth="223.9999885559082" text="Nombre" />
+                            <TableColumn fx:id="Cautor" prefWidth="226.40003967285156" text="Autor" />
+                            <TableColumn fx:id="Cimprenta" prefWidth="237.86679077148438" text="Imprenta" />
+                            <TableColumn fx:id="Ccapitulos" prefWidth="78.39996337890625" text="Capitulos" />
+                            <TableColumn fx:id="Cpaginas" prefWidth="74.4000244140625" text="N° Paginas" />
+                            <TableColumn fx:id="Cgenero" prefWidth="188.26666259765625" text="Genero" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
