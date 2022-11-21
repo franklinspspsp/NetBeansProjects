@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="415.0" prefWidth="813.0000999999975" xmlns:fx="http://javafx.com/fxml" fx:controller="tabledatasample.MainController">
+  <children>
+    <GridPane AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="15.0">
+      <children>
+        <TableView fx:id="vacantesTable" GridPane.columnIndex="0" GridPane.rowIndex="0">
+          <columns>
+            <TableColumn minWidth="240.0" prefWidth="250.0" text="Empresa" fx:id="empresaColumn" />
+            <TableColumn minWidth="240.0" prefWidth="250.0" text="Especialidad" fx:id="especialidadColumn" />
+            <TableColumn minWidth="150.0" prefWidth="140.0" text="Salario" fx:id="salarioColumn" />
+          </columns>
+        </TableView>
+        <HBox alignment="CENTER_LEFT" spacing="9.0" GridPane.columnIndex="0" GridPane.rowIndex="1">
+          <children>
+            <Label text="Empresa:" />
+            <TextField fx:id="empresaText" />
+            <Label text="Especialidad:" />
+            <TextField fx:id="especialidadText" />
+            <Label text="Salario:" />
+            <TextField fx:id="salarioText" maxWidth="120.0" minWidth="90.0" />
+            <Button fx:id="oKayButton" mnemonicParsing="false" text="OKay" />
+            <Button fx:id="graficarButton" mnemonicParsing="false" text="Graficar" />
+          </children>
+          <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+          </padding>
+        </HBox>
+      </children>
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints vgrow="ALWAYS" />
+        <RowConstraints vgrow="SOMETIMES" />
+      </rowConstraints>
+    </GridPane>
+  </children>
+</AnchorPane>
