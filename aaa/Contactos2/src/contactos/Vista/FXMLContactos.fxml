@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="202.0" prefWidth="390.0" style="-fx-background-color: #5BD4E3;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="contactos.Vista.FXMLContactosController">
+   <children>
+      <GridPane layoutX="35.0" layoutY="59.0" prefHeight="90.0" prefWidth="316.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="94.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="222.0" minWidth="10.0" prefWidth="222.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Nombres:" textFill="#0c1372" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Apellidos:" textFill="#0c1372" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <Label text="Edad:" textFill="#0c1372" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNombres" prefHeight="25.0" prefWidth="78.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtApellidos" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtEdad" prefHeight="25.0" prefWidth="59.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Código:" textFill="#0c1372">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtCodigo" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Label layoutX="43.0" layoutY="23.0" text="DATOS DE LOS CONTACTOS" textFill="#650303">
+         <font>
+            <Font name="Bookman Old Style" size="21.0" />
+         </font>
+      </Label>
+      <HBox layoutX="46.0" layoutY="164.0" prefHeight="36.0" prefWidth="340.0" spacing="10.0">
+         <children>
+            <Button fx:id="btnNuevoContacto" mnemonicParsing="false" onAction="#actNuevoContacto" text="Nuevo" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnGuardarContacto" mnemonicParsing="false" onAction="#actGuardarContacto" text="Guardar" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnSalir" mnemonicParsing="false" onAction="#actSalirContacto" text="Salir" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnModificar" mnemonicParsing="false" onAction="#actModificarContacto" text="Modificar" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnEliminar" mnemonicParsing="false" onAction="#actEliminarContacto" text="Eliminar" underline="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
