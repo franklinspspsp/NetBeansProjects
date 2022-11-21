@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 23/09/2020, 09:25:54 AM
+    Author     : USUARIO
+*/
+.button
+{
+    -fx-TextField: white;
+    -fx-font-family: "Times new roman";
+    -fx-font-size: 32px;
+    -fx-text-veight:hold;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.7),5,0.0,0,1);
+    -fx-background-color: linear-gradient(#F109F8,#09F8F4);
+}
+.label
+{
+    -fx-text-fill: blue;
+    -fx-font-size: 16px;
+    -fx-font-family: "Calibri";
+    -fx-text-veight:hold;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.7),5,0.0,0,1);
+}
+#Pane1
+{
+    -fx-background-color: #09F8F4;
+}
