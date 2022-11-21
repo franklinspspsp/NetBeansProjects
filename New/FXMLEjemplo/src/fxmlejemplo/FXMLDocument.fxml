@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="273.0" prefWidth="367.0" style="-fx-background-color: #00FFFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlejemplo.FXMLDocumentController">
+    <children>
+      <GridPane layoutX="19.0" layoutY="18.0" prefHeight="227.0" prefWidth="314.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="48.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="35.0" minHeight="10.0" prefHeight="26.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="34.0" minHeight="10.0" prefHeight="34.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="27.0" minHeight="10.0" prefHeight="11.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="36.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="RIGHT" prefHeight="21.0" prefWidth="147.0" text="WELCOME" />
+            <Label text="USUARIO" GridPane.rowIndex="1" />
+            <Label text="CONTRASEÑA" GridPane.rowIndex="2" />
+            <TextField prefHeight="31.0" prefWidth="163.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="17.0" prefWidth="75.0" text="Aceptar" textAlignment="RIGHT" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+            <Label fx:id="cambio" text="Crear registro - presionar" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>
