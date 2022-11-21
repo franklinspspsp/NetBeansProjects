@@ -1,0 +1,26 @@
+.button
+{
+    -fx-TextField: black;
+    -fx-font-family: "Times new roman";
+    -fx-font-size: 20px;
+    -fx-text-veight:hold;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.7),5,0.0,0,1);
+    -fx-background-color: linear-gradient(#bbbabb,#bcecec);
+}
+.label
+{
+    -fx-text-fill: black;
+    -fx-font-size: 19px;
+    -fx-font-family: "Calibri";
+    -fx-text-veight:hold;
+}
+#Pane1
+{
+    -fx-background-color: #B8E3FB;
+}
+
+/*
+decimal = int(input("Ingrese el valor decimal: "))
+octal = oct(decimal)
+print("El valor convertido a octal es: ", octal)
+*/
