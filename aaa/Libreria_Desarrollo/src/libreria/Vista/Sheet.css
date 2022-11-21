@@ -1,0 +1,16 @@
+.label{
+    -fx-font-size: 16px;
+    -fx-font-family: "Times new roman";
+}
+.button
+{
+    -fx-TextField: white;
+    -fx-font-family: "Times new roman";
+    -fx-font-size: 16px;
+    -fx-text-veight:hold;
+    -fx-effect: dropshadow(three-pass-box,rgba(0,0,0,0.7),5,0.0,0,1);
+    -fx-background-color: linear-gradient(#bbbabb,#bcecec);
+}
+.textfield{
+    -fx-background-color: linear-gradient(#bcecec,#bcecec);
+}

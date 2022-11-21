@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="1113.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libreria.Vista.FXMLLogin">
+   <children>
+      <TabPane layoutY="32.0" prefHeight="620.0" prefWidth="1113.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Autor">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtNombreA" layoutX="144.0" layoutY="41.0" />
+                        <TextField fx:id="txtApellidoA" layoutX="144.0" layoutY="79.0" />
+                        <TextField fx:id="txtPais" layoutX="144.0" layoutY="114.0" />
+                        <TextField fx:id="txtEstudio" layoutX="502.0" layoutY="78.0" />
+                        <TextField fx:id="txtCiudad" layoutX="502.0" layoutY="41.0" />
+                        <Label layoutX="41.0" layoutY="44.0" text="Nombre: " />
+                        <Label layoutX="41.0" layoutY="82.0" text="Apellido: " />
+                        <Label layoutX="41.0" layoutY="117.0" text="Pais: " />
+                        <Label layoutX="401.0" layoutY="44.0" text="Ciudad:" />
+                        <Label layoutX="401.0" layoutY="81.0" text="Estudio: " />
+                        <HBox layoutX="33.0" layoutY="161.0" prefHeight="42.0" prefWidth="552.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="btnAgregarA" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Agregar" />
+                              <Button fx:id="btnEditarA" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Editar" />
+                              <Button fx:id="btnEliminarA" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Eliminar" />
+                              <Button fx:id="btnLimpiarA" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Limpiar" />
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tvAutor" layoutX="14.0" layoutY="215.0" prefHeight="366.0" prefWidth="1081.0">
+                          <columns>
+                            <TableColumn fx:id="clmIdAutorA" prefWidth="75.0" text="IdAutor" />
+                            <TableColumn fx:id="clmNombreA" prefWidth="136.0" text="Nombre" />
+                              <TableColumn fx:id="clmApellidoA" prefWidth="111.0" text="Apellido" />
+                              <TableColumn fx:id="clmPais" prefWidth="109.0" text="Pais" />
+                              <TableColumn fx:id="clmCiudad" prefWidth="118.0" text="Ciudad" />
+                              <TableColumn fx:id="clmEstudio" prefWidth="107.0" text="Estudio" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Libro">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtNroPaginas" layoutX="445.0" layoutY="83.0" />
+                        <TextField fx:id="txtImprenta" layoutX="128.0" layoutY="116.0" />
+                        <TextField fx:id="txtNombreL" layoutX="128.0" layoutY="48.0" />
+                        <TextField fx:id="txtCapitulos" layoutX="445.0" layoutY="48.0" />
+                        <TextField fx:id="txtIdAutor" layoutX="128.0" layoutY="83.0" />
+                        <Label layoutX="368.0" layoutY="52.0" text="Capitulos: " />
+                        <Label layoutX="337.0" layoutY="87.0" text="Nro de Paginas: " />
+                        <Label layoutX="50.0" layoutY="120.0" text="Imprenta: " />
+                        <Label layoutX="60.0" layoutY="87.0" text="IdAutor: " />
+                        <Label layoutX="57.0" layoutY="52.0" text="Nombre:" />
+                        <TextField fx:id="txtGenero" layoutX="445.0" layoutY="116.0" />
+                        <Label layoutX="374.0" layoutY="120.0" text="Genero:" />
+                        <HBox layoutX="61.0" layoutY="161.0" prefHeight="42.0" prefWidth="552.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="btnAgregarL" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Agregar" />
+                              <Button fx:id="btnEditarL" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Editar" />
+                              <Button fx:id="btnEliminarL" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Eliminar" />
+                              <Button fx:id="btnLimpiarL" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Limpiar" />
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tvLibro" layoutX="14.0" layoutY="203.0" prefHeight="366.0" prefWidth="1081.0">
+                           <columns>
+                              <TableColumn fx:id="clmIdLibroL" prefWidth="75.0" text="IdLibro" />
+                              <TableColumn fx:id="clmNombreL" prefWidth="165.0" text="Nombre" />
+                              <TableColumn fx:id="clmIdAutorL" prefWidth="108.0" text="IdAutor" />
+                              <TableColumn fx:id="clmImprenta" prefWidth="211.0" text="Imprenta" />
+                              <TableColumn fx:id="clmCapitulos" prefWidth="120.0" text="Capitulos" />
+                              <TableColumn fx:id="clmPaginas" prefWidth="104.0" text="Nro de Paginas" />
+                              <TableColumn fx:id="clmGenero" prefWidth="177.0" text="Genero" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Usuario">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="txtNombreU" layoutX="144.0" layoutY="39.0" />
+                        <Label layoutX="58.0" layoutY="43.0" prefHeight="12.0" prefWidth="50.0" text="Nombre: " />
+                        <TextField fx:id="txtTelefono" layoutX="408.0" layoutY="74.0" />
+                        <Label layoutX="322.0" layoutY="78.0" prefHeight="17.0" prefWidth="56.0" text="Telefono: " />
+                        <TextField fx:id="txtDni" layoutX="408.0" layoutY="41.0" />
+                        <Label layoutX="345.0" layoutY="45.0" prefHeight="17.0" prefWidth="28.0" text="DNI:" />
+                        <TextField fx:id="txtSexo" layoutX="144.0" layoutY="110.0" />
+                        <Label layoutX="75.0" layoutY="114.0" prefHeight="17.0" prefWidth="33.0" text="Sexo:" />
+                        <TextField fx:id="txtApellidoU" layoutX="144.0" layoutY="74.0" />
+                        <Label layoutX="58.0" layoutY="78.0" prefHeight="12.0" prefWidth="50.0" text="Apellido: " />
+                        <TextField fx:id="txtEmail" layoutX="408.0" layoutY="110.0" />
+                        <Label layoutX="341.0" layoutY="114.0" prefHeight="17.0" prefWidth="35.0" text="Email:" />
+                        <HBox layoutX="28.0" layoutY="156.0" prefHeight="42.0" prefWidth="552.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="btnAgregarU" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Agregar" />
+                              <Button fx:id="btnEditarU" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Editar" />
+                              <Button fx:id="btnEliminarU" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Eliminar" />
+                              <Button fx:id="btnLimpiarU" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Limpiar" />
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tvUsuario" layoutX="14.0" layoutY="211.0" prefHeight="366.0" prefWidth="1081.0">
+                           <columns>
+                              <TableColumn fx:id="clmNombreU" prefWidth="155.0" text="Nombre" />
+                              <TableColumn fx:id="clmApellidoU" prefWidth="188.0" text="Apellido" />
+                              <TableColumn fx:id="clmSexo" prefWidth="103.0" text="Sexo" />
+                              <TableColumn fx:id="clmDniU" prefWidth="159.0" text="DNI" />
+                              <TableColumn fx:id="clmTelefono" prefWidth="178.0" text="Telefono" />
+                              <TableColumn fx:id="clmEmail" prefWidth="251.0" text="Email" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Venta">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="IdVenta" layoutX="375.0" layoutY="32.0" />
+                        <Label layoutX="298.0" layoutY="36.0" prefHeight="12.0" prefWidth="50.0" text="IdVenta: " />
+                        <TextField fx:id="txtDniV" layoutX="123.0" layoutY="68.0" />
+                        <Label layoutX="71.0" layoutY="72.0" prefHeight="17.0" prefWidth="24.0" text="Dni:" />
+                        <TextField fx:id="txtIdLibroV" layoutX="123.0" layoutY="104.0" />
+                        <Label layoutX="51.0" layoutY="108.0" prefHeight="17.0" prefWidth="41.0" text="IdLibro:" />
+                        <TextField fx:id="txtIdAutorV" layoutX="123.0" layoutY="32.0" />
+                        <Label layoutX="48.0" layoutY="36.0" prefHeight="17.0" prefWidth="46.0" text="IdAutor:" />
+                        <Label layoutX="557.0" layoutY="36.0" prefHeight="12.0" prefWidth="50.0" text="IdVenta: " visible="false" />
+                        <Label layoutX="582.0" layoutY="73.0" prefHeight="17.0" prefWidth="24.0" text="Dni:" visible="false" />
+                        <Label layoutX="562.0" layoutY="109.0" prefHeight="17.0" prefWidth="41.0" text="IdLibro:" visible="false" />
+                        <Label layoutX="813.0" layoutY="36.0" prefHeight="17.0" prefWidth="46.0" text="IdAutor:" visible="false" />
+                        <ComboBox fx:id="cbIdVenta" layoutX="616.0" layoutY="31.0" prefHeight="25.0" prefWidth="78.0" visible="false" />
+                        <ComboBox fx:id="cbDni" layoutX="616.0" layoutY="69.0" prefHeight="25.0" prefWidth="78.0" visible="false" />
+                        <ComboBox fx:id="cbIdLibro" layoutX="616.0" layoutY="105.0" prefHeight="25.0" prefWidth="78.0" visible="false" />
+                        <ComboBox fx:id="cbIdAutor" layoutX="873.0" layoutY="32.0" prefHeight="25.0" prefWidth="78.0" visible="false" />
+                        <HBox layoutX="51.0" layoutY="151.0" prefHeight="42.0" prefWidth="552.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="btnAgregarV" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Agregar" />
+                              <Button fx:id="btnEditarV" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Editar" />
+                              <Button fx:id="btnEliminarV" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Eliminar" />
+                              <Button fx:id="btnLimpiarV" mnemonicParsing="false" prefHeight="28.0" prefWidth="120.0" text="Limpiar" />
+                           </children>
+                        </HBox>
+                        <TableView fx:id="tvVenta" layoutX="17.0" layoutY="211.0" prefHeight="366.0" prefWidth="1081.0">
+                           <columns>
+                              <TableColumn fx:id="clmIdVentaV" prefWidth="192.0" text="IdVenta" />
+                              <TableColumn fx:id="clmDniV" prefWidth="252.0" text="DNI" />
+                              <TableColumn fx:id="clmIdLibroV" prefWidth="193.0" text="IdLibro" />
+                              <TableColumn fx:id="clmIdAutorV" prefWidth="157.0" text="IdAutor" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Libreria">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
