@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="687.0" prefWidth="1030.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.SinPuntoFlotanteController">
+    <children>
+      <Label layoutX="752.0" layoutY="94.0" text="Numero 2">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNumero1" alignment="CENTER" layoutX="148.0" layoutY="118.0" />
+      <TextField fx:id="txtNumero2" alignment="CENTER" layoutX="727.0" layoutY="118.0" />
+      <Button fx:id="btnConvertir" layoutX="464.0" layoutY="104.0" mnemonicParsing="false" onAction="#Convertir" prefHeight="26.0" prefWidth="102.0" text="Convertir">
+         <font>
+            <Font name="Bank Gothic Light BT" size="14.0" />
+         </font></Button>
+      <Label layoutX="163.0" layoutY="24.0" text="OPERACIONES SIN PUNTO FLOTATE">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="34.0" />
+         </font></Label>
+      <Label layoutX="173.0" layoutY="94.0" text="Numero 1">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="18.0" />
+         </font></Label>
+      <Label layoutX="440.0" layoutY="426.0" text="RESULTADO">
+         <font>
+            <Font name="Bank Gothic Medium BT" size="21.0" />
+         </font></Label>
+      <GridPane layoutX="15.0" layoutY="217.0" prefHeight="150.0" prefWidth="415.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="115.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="300.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="0.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="BINARIO">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="14.0" />
+               </font>
+            </Label>
+            <Label text="OCTAL" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="14.0" />
+               </font>
+            </Label>
+            <Label text="HEXADECIMAL" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBin1" alignment="CENTER" prefHeight="26.0" prefWidth="298.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtOct1" alignment="CENTER" prefHeight="26.0" prefWidth="298.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtHex1" alignment="CENTER" prefHeight="26.0" prefWidth="298.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="455.0" layoutY="192.0" prefHeight="200.0" prefWidth="120.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.0" minWidth="10.0" prefWidth="120.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="btnSuma" mnemonicParsing="false" onAction="#Suma" prefHeight="26.0" prefWidth="120.0" text="Suma">
+               <font>
+                  <Font name="Bank Gothic Light BT" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnResta" mnemonicParsing="false" onAction="#Resta" prefHeight="26.0" prefWidth="120.0" text="Resta" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bank Gothic Light BT" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnMulti" mnemonicParsing="false" onAction="#Multiplicacion" prefHeight="26.0" prefWidth="120.0" text="Multiplicacion" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bank Gothic Light BT" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnDivi" mnemonicParsing="false" onAction="#Division" prefHeight="26.0" prefWidth="120.0" text="Division" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Bank Gothic Light BT" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+      <GridPane layoutX="602.0" layoutY="217.0" prefHeight="150.0" prefWidth="415.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="300.0" />
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="115.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <TextField fx:id="txtBin2" alignment="CENTER" prefHeight="26.0" prefWidth="298.0" />
+            <TextField fx:id="txtOct2" alignment="CENTER" prefHeight="26.0" prefWidth="298.0" GridPane.rowIndex="1" />
+            <TextField fx:id="txtHex2" alignment="CENTER" prefHeight="26.0" prefWidth="298.0" GridPane.rowIndex="2" />
+            <Label text="BINARIO" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="14.0" />
+               </font>
+            </Label>
+            <Label text="OCTAL" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="14.0" />
+               </font>
+            </Label>
+            <Label text="HEXADECIMAL" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <GridPane layoutX="307.0" layoutY="465.0" prefHeight="200.0" prefWidth="415.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="115.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="300.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="BINARIO" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="14.0" />
+               </font>
+            </Label>
+            <Label text="OCTAL" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="14.0" />
+               </font>
+            </Label>
+            <Label text="HEXADECIMAL" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="13.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtRes1" alignment="CENTER" prefHeight="26.0" prefWidth="298.0" GridPane.columnIndex="1" />
+            <TextField fx:id="txtRes2" alignment="CENTER" prefHeight="26.0" prefWidth="298.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="txtRes3" alignment="CENTER" prefHeight="26.0" prefWidth="298.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtRes4" alignment="CENTER" prefHeight="26.0" prefWidth="298.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="DECIMAL">
+               <font>
+                  <Font name="Bank Gothic Medium BT" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>
