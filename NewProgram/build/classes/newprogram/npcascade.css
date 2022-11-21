@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04-feb-2020, 9:57:52
+    Author     : DeCo
+*/
+
+.button
+{
+    -fx-TextField: white;
+    -fx-font-family: "Times new roman";
+    -fx-text-veight:hold;
+    -fx-background-color: linear-gradient(#09F8F4,#F109F8);
+    -fx-effect: dropshadow();
+}
+
+#TituloId
+{
+    -fx-font: 32pxj;
+    -fx-font-family: "Arial Black";
+    -fx-fill: #E12D1B;
+    -fx-effect: innershadow(three-pass-box,rgba(0,0,0,7),6,0,0,2);
+    -fx-effect: dropshadow();
+}
+
+#label1
+{
+    -fx-text-fill: blue;
+    -fx-font-family: "Calibri";
+    -fx-text-veight:hold;
+    -fx-background-color: linear-gradient(#EFFA08,#F109F8);
+    -fx-effect: dropshadow();
+}
+
+#label2
+{
+    -fx-text-fill: pink;
+    -fx-font-family: "Cambria";
+    -fx-text-veight:hold;
+    -fx-background-color: linear-gradient(#1EFA08,#F109F8);
+    -fx-effect: dropshadow();
+}
